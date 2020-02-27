@@ -630,3 +630,7 @@ pre tt:after {
   width: 1170px;
   margin: 6.25rem auto;
 }
+.entry-header {
+  width: 100%;
+  text-align: center;
+}
