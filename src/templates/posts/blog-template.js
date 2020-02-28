@@ -12,26 +12,26 @@ const BlogTemplate = ({ pageContext: { nodes } }) => {
               id,
               postId,
               title,
-              content,
+              // content,
               excerpt,
               uri,
               featuredImage,
             } = post
 
-            const maxLength = 240
+            // const maxLength = 240
             let excerptText = excerpt
 
             // Check if excerpt exits
-            if (!excerptText) {
-              // Get the first ( maxLength e.g. 240 characters ) from the content.
-              excerptText = content.substr(0, maxLength)
-              excerptText = content
-                .substr(
-                  0,
-                  Math.min(excerptText.length, excerptText.lastIndexOf(""))
-                )
-                .concat("...")
-            }
+            // if (!excerptText) {
+            //   // Get the first ( maxLength e.g. 240 characters ) from the content.
+            //   excerptText = content.substr(0, maxLength)
+            //   excerptText = content
+            //     .substr(
+            //       0,
+            //       Math.min(excerptText.length, excerptText.lastIndexOf(""))
+            //     )
+            //     .concat("...")
+            // }
 
             return (
               <StyledCard data-id={id} key={postId}>

@@ -1,5 +1,5 @@
 import React from "react"
-import { StyledCard } from "../../styles/components"
+// import { StyledCard } from "../../styles/components"
 
 const SinglePostTemplate = props => {
   const {
@@ -7,7 +7,7 @@ const SinglePostTemplate = props => {
   } = props
 
   return (
-    <div classNames="blog">
+    <div className="blog">
       <div
         data-id={id}
         id={`post-${postId}`}
